@@ -23,7 +23,10 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
 	implementation 'org.jetbrains.kotlin:kotlin-reflect'
+
+//	test
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.24.2'
 }
 
 tasks.withType(KotlinCompile) {
